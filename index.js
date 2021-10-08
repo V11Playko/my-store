@@ -63,5 +63,5 @@ app.get('/categories/:categoryId/products/:productId', (req, res) => {
 })
 */
 app.listen(port, () => {
-  console.log('Mi port' + port);
+  console.log('Mi port is: ' + port);
 });
