@@ -33,7 +33,7 @@ class ProductsService {
       include: ['category'],
     }
     const { limit, offset } = query;
-    if (limit && offset) {
+    if (limit && offset) { 
       options.limit =  limit;
       options.offset =  offset;
     }
