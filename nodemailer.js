@@ -1,4 +1,5 @@
 const nodemailer = require("nodemailer");
+const { config } = require('./../config/config');
 
 // async..await is not allowed in global scope, must use a wrapper
 async function sendMail() {
@@ -9,8 +10,8 @@ async function sendMail() {
     secure: true, // true for 465, false for other ports
     port: 465,
     auth: {
-      user: 'heinnervega20@gmail.com',
-      pass: 'fRN5Kqrr56ak6hcRXA'
+      user: config.smtpEmail,
+      pass: config.smtpPassword
     }
   });
 

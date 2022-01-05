@@ -46,7 +46,7 @@ class AuthService {
     const mail = {
       from: config.smtpEmail,
       to: `${user.email}`,
-      subject: "Email para recuperar contraseÃ±a",
+      subject: "Email para recuperar contraseña",
       html: `<b>Ingresa a este link => ${link}</b>`,
     }
     const rta = await this.sendMail(mail);
